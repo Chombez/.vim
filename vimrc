@@ -4,6 +4,7 @@
 "Vim Plug
 call plug#begin()
 Plug 'tpope/vim-sensible'
+Plug 'Raimondi/delimitMate'
 call plug#end()
 
 "Use VIM setting rather than VI
@@ -58,3 +59,5 @@ noremap <Down>	<NOP>
 noremap <Left>	<NOP>
 noremap <Right>	<NOP>
 
+"Filetype specific settings
+autocmd Filetype gitcommit set spell spelllang=en_au | set textwidth=72

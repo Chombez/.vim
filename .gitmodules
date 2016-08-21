@@ -1,0 +1,6 @@
+[submodule "plugged/delimitMate"]
+	path = plugged/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "plugged/vim-sensible"]
+	path = plugged/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
