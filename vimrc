@@ -1,11 +1,15 @@
 "Chomps vimrc file
 
-"Plugin commands
-"Vim Plug
+"VimPlug configuration
 call plug#begin()
-Plug 'tpope/vim-sensible'
-Plug 'Raimondi/delimitMate'
-Plug 'Valloric/YouCompleteMe'
+
+	Plug 'tpope/vim-sensible'
+	Plug 'Raimondi/delimitMate'
+		let delimitMate_expand_cr = 1
+	Plug 'justinmk/vim-sneak'
+		let g:sneak#streak = 1
+	Plug 'Valloric/YouCompleteMe'
+
 call plug#end()
 
 "Use VIM setting rather than VI
@@ -13,6 +17,8 @@ set nocompatible
 
 "Colours
 colorscheme torte
+set colorcolumn=80
+set cursorline
 
 "Misc
 set relativenumber

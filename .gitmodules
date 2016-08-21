@@ -7,3 +7,6 @@
 [submodule "plugged/YouCompleteMe"]
 	path = plugged/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "plugged/vim-sneak"]
+	path = plugged/vim-sneak
+	url = git@github.com:justinmk/vim-sneak.git
