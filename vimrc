@@ -9,6 +9,7 @@ call plug#begin()
 	Plug 'justinmk/vim-sneak'
 		let g:sneak#streak = 1
 	Plug 'Valloric/YouCompleteMe'
+	Plug 'dag/vim-fish', {'for': 'fish'}
 
 call plug#end()
 
