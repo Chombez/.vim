@@ -5,6 +5,7 @@
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'Raimondi/delimitMate'
+Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 "Use VIM setting rather than VI

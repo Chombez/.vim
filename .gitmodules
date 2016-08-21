@@ -4,3 +4,6 @@
 [submodule "plugged/vim-sensible"]
 	path = plugged/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
+[submodule "plugged/YouCompleteMe"]
+	path = plugged/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
