@@ -6,10 +6,20 @@ call plug#begin()
 	Plug 'tpope/vim-sensible'
 	Plug 'Raimondi/delimitMate'
 		let delimitMate_expand_cr = 1
+		let delimitMate_expand_space = 1
 	Plug 'justinmk/vim-sneak'
 		let g:sneak#streak = 1
 	Plug 'Valloric/YouCompleteMe'
 	Plug 'dag/vim-fish', {'for': 'fish'}
+	Plug 'vim-airline/vim-airline'
+	
+	" Git
+	Plug 'airblade/vim-gitgutter'
+		let g:gitgutter_sign_removed = '-'
+		let g:gitgutter_sign_modified_removed = '~-'
+	Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-git'
+	Plug 'junegunn/gv.vim', { 'on': 'GV' }
 
 call plug#end()
 
@@ -69,3 +79,4 @@ noremap <Right>	<NOP>
 
 "Filetype specific settings
 autocmd Filetype gitcommit set spell spelllang=en_au | set textwidth=72
+autocmd Filetype fish compiler fish
