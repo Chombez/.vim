@@ -6,9 +6,9 @@ call plug#begin()
 	Plug 'tpope/vim-sensible'
 	Plug 'Raimondi/delimitMate'
 		let delimitMate_expand_cr = 1
+		let delimitMate_expand_space = 1
 	Plug 'justinmk/vim-sneak'
 		let g:sneak#streak = 1
-	Plug 'Valloric/YouCompleteMe'
 	Plug 'dag/vim-fish', {'for': 'fish'}
 
 call plug#end()
