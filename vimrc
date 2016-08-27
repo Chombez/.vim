@@ -23,6 +23,11 @@ call plug#begin()
 
 call plug#end()
 
+"Plugin mappings
+nnoremap <Leader>tggh :GitGutterLineHighlightsToggle<cr>
+nnoremap <Leader>fi :YcmCompleter FixIt<cr>
+nnoremap <Leader>gt :YcmCompleter GoTo<cr>
+
 "Use VIM setting rather than VI
 set nocompatible
 
@@ -76,6 +81,12 @@ noremap <Up>	<NOP>
 noremap <Down>	<NOP>
 noremap <Left>	<NOP>
 noremap <Right>	<NOP>
+
+"Allow for easier window navigation
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <C-h> <C-w>h
 
 "Filetype specific settings
 autocmd Filetype gitcommit set spell spelllang=en_au | set textwidth=72
