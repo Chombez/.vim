@@ -12,6 +12,8 @@ call plug#begin()
 	Plug 'Valloric/YouCompleteMe'
 	Plug 'dag/vim-fish', {'for': 'fish'}
 	Plug 'vim-airline/vim-airline'
+	Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
+		let g:airline#extensions#tagbar#enabled = 0
 	
 	" Git
 	Plug 'airblade/vim-gitgutter'
@@ -24,6 +26,7 @@ call plug#begin()
 call plug#end()
 
 "Plugin mappings
+nnoremap <Leader>tb :TagbarToggle<cr>
 nnoremap <Leader>tggh :GitGutterLineHighlightsToggle<cr>
 nnoremap <Leader>fi :YcmCompleter FixIt<cr>
 nnoremap <Leader>gt :YcmCompleter GoTo<cr>
