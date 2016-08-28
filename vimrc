@@ -7,6 +7,7 @@ call plug#begin()
 	Plug 'Raimondi/delimitMate'
 		let delimitMate_expand_cr = 1
 		let delimitMate_expand_space = 1
+	Plug 'tpope/vim-commentary'
 	Plug 'justinmk/vim-sneak'
 		let g:sneak#streak = 1
 	Plug 'Valloric/YouCompleteMe'

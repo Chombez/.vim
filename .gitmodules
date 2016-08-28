@@ -31,3 +31,6 @@
 [submodule "plugged/tagbar"]
 	path = plugged/tagbar
 	url = git@github.com:majutsushi/tagbar
+[submodule "plugged/vim-commentary"]
+	path = plugged/vim-commentary
+	url = git@github.com:tpope/vim-commentary
