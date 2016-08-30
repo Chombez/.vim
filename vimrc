@@ -13,8 +13,8 @@ call plug#begin()
 	Plug 'Valloric/YouCompleteMe'
 	Plug 'dag/vim-fish', {'for': 'fish'}
 	Plug 'vim-airline/vim-airline'
-	Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 		let g:airline#extensions#tagbar#enabled = 0
+	Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 	
 	" Git
 	Plug 'airblade/vim-gitgutter'
