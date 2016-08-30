@@ -7,11 +7,29 @@ call plug#begin()
 	Plug 'Raimondi/delimitMate'
 		let delimitMate_expand_cr = 1
 		let delimitMate_expand_space = 1
+	Plug 'tpope/vim-commentary'
 	Plug 'justinmk/vim-sneak'
 		let g:sneak#streak = 1
 	Plug 'dag/vim-fish', {'for': 'fish'}
+	Plug 'vim-airline/vim-airline'
+		let g:airline#extensions#tagbar#enabled = 0
+	Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
+	
+	" Git
+	Plug 'airblade/vim-gitgutter'
+		let g:gitgutter_sign_removed = '-'
+		let g:gitgutter_sign_modified_removed = '~-'
+	Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-git'
+	Plug 'junegunn/gv.vim', { 'on': 'GV' }
 
 call plug#end()
+
+"Plugin mappings
+nnoremap <Leader>tb :TagbarToggle<cr>
+nnoremap <Leader>tggh :GitGutterLineHighlightsToggle<cr>
+nnoremap <Leader>fi :YcmCompleter FixIt<cr>
+nnoremap <Leader>gt :YcmCompleter GoTo<cr>
 
 "Use VIM setting rather than VI
 set nocompatible
@@ -67,5 +85,12 @@ noremap <Down>	<NOP>
 noremap <Left>	<NOP>
 noremap <Right>	<NOP>
 
+"Allow for easier window navigation
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <C-h> <C-w>h
+
 "Filetype specific settings
 autocmd Filetype gitcommit set spell spelllang=en_au | set textwidth=72
+autocmd Filetype fish compiler fish

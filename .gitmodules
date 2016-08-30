@@ -10,3 +10,24 @@
 [submodule "plugged/vim-fish"]
 	path = plugged/vim-fish
 	url = https://github.com/dag/vim-fish.git
+[submodule "plugged/vim-gitgutter"]
+	path = plugged/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "plugged/vim-fugitive"]
+	path = plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "plugged/vim-git"]
+	path = plugged/vim-git
+	url = https://github.com/tpope/vim-git
+[submodule "plugged/gv.vim"]
+	path = plugged/gv.vim
+	url = https://github.com/junegunn/gv.vim
+[submodule "plugged/vim-airline"]
+	path = plugged/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "plugged/tagbar"]
+	path = plugged/tagbar
+	url = https://github.com/majutsushi/tagbar
+[submodule "plugged/vim-commentary"]
+	path = plugged/vim-commentary
+	url = https://github.com/tpope/vim-commentary
