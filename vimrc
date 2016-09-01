@@ -5,19 +5,23 @@ call plug#begin()
 
 	Plug 'tpope/vim-sensible'
 	Plug 'Raimondi/delimitMate'
-		let delimitMate_expand_cr = 1
+		let delimitMate_expand_cr    = 1
 		let delimitMate_expand_space = 1
 	Plug 'tpope/vim-commentary'
+	Plug 'junegunn/vim-easy-align', {'on': ['<Plug>(EasyAlign)', 'EasyAlign']}
+		xmap ga <Plug>(EasyAlign)
+		nmap ga <Plug>(EasyAlign)
 	Plug 'justinmk/vim-sneak'
 		let g:sneak#streak = 1
 	Plug 'dag/vim-fish', {'for': 'fish'}
 	Plug 'vim-airline/vim-airline'
 		let g:airline#extensions#tagbar#enabled = 0
 	Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
+		let g:tagbar_sort = 0
 	
 	" Git
 	Plug 'airblade/vim-gitgutter'
-		let g:gitgutter_sign_removed = '-'
+		let g:gitgutter_sign_removed          = '-'
 		let g:gitgutter_sign_modified_removed = '~-'
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-git'
@@ -26,10 +30,8 @@ call plug#begin()
 call plug#end()
 
 "Plugin mappings
-nnoremap <Leader>tb :TagbarToggle<cr>
+nnoremap <Leader>tb   :TagbarToggle<cr>
 nnoremap <Leader>tggh :GitGutterLineHighlightsToggle<cr>
-nnoremap <Leader>fi :YcmCompleter FixIt<cr>
-nnoremap <Leader>gt :YcmCompleter GoTo<cr>
 
 "Use VIM setting rather than VI
 set nocompatible
@@ -47,9 +49,9 @@ set cmdheight=2
 set autoread
 
 "Key Mappings
-map <space> /
-inoremap ;l <esc>
-inoremap <Nul> <C-n>
+map      <space> /
+inoremap ;l      <esc>
+inoremap <Nul>   <C-n>
 
 "Searching
 set smartcase
@@ -80,10 +82,10 @@ filetype plugin on
 syntax enable
 
 "Remove arrow key navigation
-noremap <Up>	<NOP>
-noremap <Down>	<NOP>
-noremap <Left>	<NOP>
-noremap <Right>	<NOP>
+noremap  <Up>   <NOP>
+noremap <Down>  <NOP>
+noremap <Left>  <NOP>
+noremap <Right> <NOP>
 
 "Allow for easier window navigation
 map <C-j> <C-w>j
