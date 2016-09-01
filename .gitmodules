@@ -1,12 +1,12 @@
 [submodule "plugged/delimitMate"]
 	path = plugged/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
+	url = git@github.com:Raimondi/delimitMate.git
 [submodule "plugged/vim-sensible"]
 	path = plugged/vim-sensible
-	url = https://github.com/tpope/vim-sensible.git
+	url = git@github.com:tpope/vim-sensible.git
 [submodule "plugged/YouCompleteMe"]
 	path = plugged/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
+	url = git@github.com:Valloric/YouCompleteMe.git
 [submodule "plugged/vim-sneak"]
 	path = plugged/vim-sneak
 	url = git@github.com:justinmk/vim-sneak.git
@@ -36,4 +36,4 @@
 	url = git@github.com:tpope/vim-commentary
 [submodule "plugged/vim-easy-align"]
 	path = plugged/vim-easy-align
-	url = https://github.com/junegunn/vim-easy-align
+	url = git@github.com:junegunn/vim-easy-align
