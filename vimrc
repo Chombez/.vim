@@ -4,21 +4,28 @@
 call plug#begin()
 
 	Plug 'tpope/vim-sensible'
+
 	Plug 'Raimondi/delimitMate'
 		let delimitMate_expand_cr    = 1
 		let delimitMate_expand_space = 1
+
 	Plug 'tpope/vim-commentary'
+
 	Plug 'junegunn/vim-easy-align', {'on': ['<Plug>(EasyAlign)', 'EasyAlign']}
 		xmap ga <Plug>(EasyAlign)
 		nmap ga <Plug>(EasyAlign)
+
 	Plug 'justinmk/vim-sneak'
 		let g:sneak#streak = 1
+
 	Plug 'dag/vim-fish', {'for': 'fish'}
+
 	Plug 'vim-airline/vim-airline'
 		let g:airline#extensions#tagbar#enabled = 0
+
 	Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 		let g:tagbar_sort = 0
-	
+
 	" Git
 	Plug 'airblade/vim-gitgutter'
 		let g:gitgutter_sign_removed          = '-'
