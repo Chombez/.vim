@@ -4,16 +4,16 @@
 call plug#begin()
 
 	Plug 'tpope/vim-sensible'
+	Plug 'tpope/vim-commentary'
+	Plug 'tpope/vim-surround'
+	Plug 'tpope/vim-unimpaired'
+	Plug 'tpope/vim-repeat'
 
 	Plug 'Raimondi/delimitMate'
 		let delimitMate_expand_cr    = 1
 		let delimitMate_expand_space = 1
 
-	Plug 'tpope/vim-commentary'
-
 	Plug 'junegunn/vim-easy-align', {'on': ['<Plug>(EasyAlign)', 'EasyAlign']}
-		xmap ga <Plug>(EasyAlign)
-		nmap ga <Plug>(EasyAlign)
 
 	Plug 'justinmk/vim-sneak'
 		let g:sneak#streak = 1
@@ -27,11 +27,14 @@ call plug#begin()
 		let g:tagbar_sort = 0
 
 	" Git
-	Plug 'airblade/vim-gitgutter'
-		let g:gitgutter_sign_removed          = '-'
-		let g:gitgutter_sign_modified_removed = '~-'
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-git'
+
+	Plug 'airblade/vim-gitgutter'
+		let g:gitgutter_sign_added    = '🞥'
+		let g:gitgutter_sign_modified = '🟊'
+		let g:gitgutter_sign_removed  = '❌'
+
 	Plug 'junegunn/gv.vim', { 'on': 'GV' }
 
 call plug#end()
@@ -39,6 +42,10 @@ call plug#end()
 "Plugin mappings
 nnoremap <Leader>tb   :TagbarToggle<cr>
 nnoremap <Leader>tggh :GitGutterLineHighlightsToggle<cr>
+xmap     ga           <Plug>(EasyAlign)
+nmap     ga           <Plug>(EasyAlign)
+nmap     ]h           <Plug>GitGutterNextHunk
+nmap     [h           <Plug>GitGutterPrevHunk
 
 "Use VIM setting rather than VI
 set nocompatible
@@ -56,9 +63,10 @@ set cmdheight=2
 set autoread
 
 "Key Mappings
-map      <space> /
-inoremap ;l      <esc>
-inoremap <Nul>   <C-n>
+  map    <space>   /
+inoremap   ;l    <esc>
+inoremap  <Nul>  <C-n>
+nnoremap    n     nzz
 
 "Searching
 set smartcase

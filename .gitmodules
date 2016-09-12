@@ -34,3 +34,12 @@
 [submodule "plugged/vim-easy-align"]
 	path = plugged/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
+[submodule "plugged/vim-surround"]
+	path = plugged/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "plugged/vim-unimpaired"]
+	path = plugged/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "plugged/vim-repeat"]
+	path = plugged/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
