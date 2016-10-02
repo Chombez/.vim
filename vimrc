@@ -60,7 +60,7 @@ nmap     [h           <Plug>GitGutterPrevHunk
 set nocompatible
 
 "Colours
-colorscheme torte
+colorscheme slate
 set colorcolumn=80
 set cursorline
 
