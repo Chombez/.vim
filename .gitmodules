@@ -43,3 +43,6 @@
 [submodule "plugged/vim-repeat"]
 	path = plugged/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "plugged/vim-sleuth"]
+	path = plugged/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth
