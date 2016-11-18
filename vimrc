@@ -19,6 +19,8 @@ call plug#begin()
 	Plug 'justinmk/vim-sneak'
 		let g:sneak#streak = 1
 
+	Plug 'junegunn/fzf', {'on': 'FZF'}
+
 	Plug 'Valloric/YouCompleteMe'
 		let g:ycm_always_populate_location_list             = 1
 		let g:ycm_add_preview_to_completeopt                = 1
@@ -52,6 +54,7 @@ nnoremap <Leader>tb   :TagbarToggle<cr>
 nnoremap <Leader>tggh :GitGutterLineHighlightsToggle<cr>
 nnoremap <Leader>fi   :YcmCompleter FixIt<cr>
 nnoremap <Leader>gt   :YcmCompleter GoTo<cr>
+nnoremap <Leader>ff   :FZF<cr>
 xmap     ga           <Plug>(EasyAlign)
 nmap     ga           <Plug>(EasyAlign)
 nmap     ]h           <Plug>GitGutterNextHunk
