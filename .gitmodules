@@ -49,3 +49,9 @@
 [submodule "plugged/vim-sleuth"]
 	path = plugged/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
+[submodule "plugged/fzf.vim"]
+	path = plugged/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "plugged/fzf"]
+	path = plugged/fzf
+	url = https://github.com/junegunn/fzf.git
