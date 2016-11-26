@@ -46,3 +46,12 @@
 [submodule "plugged/vim-repeat"]
 	path = plugged/vim-repeat
 	url = git@github.com:tpope/vim-repeat.git
+[submodule "plugged/vim-sleuth"]
+	path = plugged/vim-sleuth
+	url = git@github.com:tpope/vim-sleuth
+[submodule "plugged/fzf.vim"]
+	path = plugged/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
+[submodule "plugged/fzf"]
+	path = plugged/fzf
+	url = git@github.com:junegunn/fzf.git
