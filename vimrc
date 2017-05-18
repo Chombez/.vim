@@ -20,6 +20,7 @@ call plug#begin()
 		let g:sneak#streak = 1
 
 	Plug 'junegunn/fzf', {'on': 'FZF'}
+		let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 	Plug 'Valloric/YouCompleteMe'
 		let g:ycm_always_populate_location_list             = 1
@@ -65,7 +66,7 @@ set nocompatible
 
 "Colours
 colorscheme slate
-set colorcolumn=80
+set colorcolumn=120
 set cursorline
 
 "Misc
