@@ -118,6 +118,15 @@ def GetCompilationInfoForFile( filename ):
           replacement_file )
         if compilation_info.compiler_flags_:
           return compilation_info
+    # Otherwise any source file in the same directory will do
+    for fname in os.listdir( os.path.dirname( filename ) ):
+      for extension in SOURCE_EXTENSIONS:
+        if fname.endswith( extension ):
+          replacement_file = os.path.join( os.path.dirname( filename ), fname )
+          compilation_info = database.GetCompilationInfoForFile(
+            replacement_file )
+          if compilation_info.compiler_flags_:
+            return compilation_info
     return None
   return database.GetCompilationInfoForFile( filename )
 
