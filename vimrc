@@ -65,7 +65,8 @@ nmap     [h           <Plug>GitGutterPrevHunk
 set nocompatible
 
 "Colours
-colorscheme slate
+" colorscheme slate
+highlight Pmenu ctermbg=233 ctermfg=129
 set colorcolumn=120
 set cursorline
 
