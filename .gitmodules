@@ -55,3 +55,9 @@
 [submodule "plugged/fzf"]
 	path = plugged/fzf
 	url = git@github.com:junegunn/fzf.git
+[submodule "plugged/vim-rtags"]
+	path = plugged/vim-rtags
+	url = https://github.com/lyuts/vim-rtags.git
+[submodule "plugged/ack.vim"]
+	path = plugged/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
