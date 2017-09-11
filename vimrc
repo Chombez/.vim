@@ -64,6 +64,7 @@ nnoremap <Leader>gt   :YcmCompleter GoTo<cr>
 nnoremap <Leader>ff   :FZF<cr>
 noremap <leader>cr :pyf /home/ryadic/src/llvm-git/llvm-install/share/clang/clang-rename.py<cr>
 noremap <leader>cf :pyf /home/ryadic/src/llvm-git/llvm-install/share/clang/clang-format.py<cr>
+noremap <leader>a :Ack!<space>""<Left>
 
 xmap     ga           <Plug>(EasyAlign)
 nmap     ga           <Plug>(EasyAlign)
@@ -94,6 +95,7 @@ nnoremap    n     nzz
 nnoremap    N     Nzz
 
 "Searching
+set ignorecase
 set smartcase
 set hlsearch
 set incsearch
