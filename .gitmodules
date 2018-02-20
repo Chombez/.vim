@@ -9,7 +9,7 @@
 	url = git@github.com:Valloric/YouCompleteMe.git
 [submodule "plugged/vim-sneak"]
 	path = plugged/vim-sneak
-	url = git@github.com:justinmk/vim-sneak.git
+	url = https://github.com/justinmk/vim-sneak.git
 [submodule "plugged/vim-fish"]
 	path = plugged/vim-fish
 	url = git@github.com:dag/vim-fish.git
