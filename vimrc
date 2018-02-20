@@ -1,4 +1,4 @@
-"Chomps vimrc file
+"Ryan's vimrc file
 
 "VimPlug configuration
 call plug#begin()
@@ -8,7 +8,7 @@ call plug#begin()
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-unimpaired'
 	Plug 'tpope/vim-repeat'
-	" Plug 'tpope/vim-sleuth'
+	Plug 'tpope/vim-sleuth'
 
 	Plug 'Raimondi/delimitMate'
 		let delimitMate_expand_cr    = 1
@@ -31,6 +31,7 @@ call plug#begin()
 		let g:ycm_autoclose_preview_window_after_completion = 1
 		let g:ycm_autoclose_preview_window_after_insertion  = 1
 		let g:ycm_confirm_extra_conf                        = 0
+		let g:ycm_filetype_whitelist = { 'python': 1, 'cpp':1 }
 
 	Plug 'lyuts/vim-rtags'
 		let g:rtagsUseLocationList = 0
@@ -88,11 +89,10 @@ set cmdheight=2
 set autoread
 
 "Key Mappings
-  map    <space>   /
-inoremap   ;l    <esc>
-inoremap  <Nul>  <C-n>
-nnoremap    n     nzz
-nnoremap    N     Nzz
+map      <space> /
+inoremap ;l      <esc>
+nnoremap n       nzz
+nnoremap N       Nzz
 
 "Searching
 set ignorecase
@@ -108,9 +108,9 @@ set wrap
 "Scrolling
 set so=5
 
-"Set tab to 2 spaces
-set shiftwidth=2
-set tabstop=2
+"Set tab to 4 spaces
+set shiftwidth=4
+set tabstop=4
 set smarttab
 
 "Show whitespaces
@@ -128,6 +128,7 @@ noremap  <Up>   <NOP>
 noremap <Down>  <NOP>
 noremap <Left>  <NOP>
 noremap <Right> <NOP>
+noremap <BS> <NOP>
 
 "Allow for easier window navigation
 map <C-j> <C-w>j
