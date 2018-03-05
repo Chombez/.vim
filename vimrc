@@ -140,3 +140,4 @@ map <C-h> <C-w>h
 autocmd Filetype gitcommit set spell spelllang=en_au | set textwidth=72
 autocmd Filetype fish compiler fish
 autocmd FileType qf map <buffer> q :quit<cr>
+autocmd FileType tagbar setlocal nocursorline nocursorcolumn
