@@ -26,7 +26,6 @@ call plug#begin()
 		let g:ackprg = 'ag --vimgrep'
 
 	Plug 'Valloric/YouCompleteMe'
-		let g:ycm_always_populate_location_list             = 1
 		let g:ycm_add_preview_to_completeopt                = 1
 		let g:ycm_autoclose_preview_window_after_completion = 1
 		let g:ycm_autoclose_preview_window_after_insertion  = 1
@@ -34,7 +33,6 @@ call plug#begin()
 		let g:ycm_filetype_whitelist = { 'python': 1, 'cpp':1 }
 
 	Plug 'lyuts/vim-rtags'
-		let g:rtagsUseLocationList = 0
 
 	Plug 'dag/vim-fish', {'for': 'fish'}
 
@@ -86,7 +84,6 @@ set relativenumber
 set number
 set wildmenu
 set cmdheight=2
-set autoread
 
 "Key Mappings
 map      <space> /
@@ -98,7 +95,6 @@ nnoremap N       Nzz
 set ignorecase
 set smartcase
 set hlsearch
-set incsearch
 
 "Indenting
 set ai
@@ -111,7 +107,6 @@ set so=5
 "Set tab to 4 spaces
 set shiftwidth=4
 set tabstop=4
-set smarttab
 
 "Show whitespaces
 set list
