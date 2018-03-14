@@ -31,6 +31,9 @@ call plug#begin()
 		let g:ycm_autoclose_preview_window_after_insertion  = 1
 		let g:ycm_confirm_extra_conf                        = 0
 		let g:ycm_filetype_whitelist = { 'python': 1, 'cpp':1 }
+		let g:ycm_error_symbol = 'x'
+		let g:ycm_warning_symbol = '!'
+		let g:ycm_python_binary_path = 'python'
 
 	Plug 'lyuts/vim-rtags'
 
