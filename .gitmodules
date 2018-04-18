@@ -1,60 +1,60 @@
 [submodule "plugged/delimitMate"]
 	path = plugged/delimitMate
-	url = git@github.com:Raimondi/delimitMate.git
+	url = https://github.com:Raimondi/delimitMate.git
 [submodule "plugged/vim-sensible"]
 	path = plugged/vim-sensible
-	url = git@github.com:tpope/vim-sensible.git
+	url = https://github.com:tpope/vim-sensible.git
 [submodule "plugged/YouCompleteMe"]
 	path = plugged/YouCompleteMe
-	url = git@github.com:Valloric/YouCompleteMe.git
+	url = https://github.com:Valloric/YouCompleteMe.git
 [submodule "plugged/vim-sneak"]
 	path = plugged/vim-sneak
 	url = https://github.com/justinmk/vim-sneak.git
 [submodule "plugged/vim-fish"]
 	path = plugged/vim-fish
-	url = git@github.com:dag/vim-fish.git
+	url = https://github.com:dag/vim-fish.git
 [submodule "plugged/vim-gitgutter"]
 	path = plugged/vim-gitgutter
-	url = git@github.com:airblade/vim-gitgutter
+	url = https://github.com:airblade/vim-gitgutter
 [submodule "plugged/vim-fugitive"]
 	path = plugged/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive
+	url = https://github.com:tpope/vim-fugitive
 [submodule "plugged/vim-git"]
 	path = plugged/vim-git
-	url = git@github.com:tpope/vim-git
+	url = https://github.com:tpope/vim-git
 [submodule "plugged/gv.vim"]
 	path = plugged/gv.vim
-	url = git@github.com:junegunn/gv.vim
+	url = https://github.com:junegunn/gv.vim
 [submodule "plugged/vim-airline"]
 	path = plugged/vim-airline
-	url = git@github.com:vim-airline/vim-airline
+	url = https://github.com:vim-airline/vim-airline
 [submodule "plugged/tagbar"]
 	path = plugged/tagbar
-	url = git@github.com:majutsushi/tagbar
+	url = https://github.com:majutsushi/tagbar
 [submodule "plugged/vim-commentary"]
 	path = plugged/vim-commentary
-	url = git@github.com:tpope/vim-commentary
+	url = https://github.com:tpope/vim-commentary
 [submodule "plugged/vim-easy-align"]
 	path = plugged/vim-easy-align
-	url = git@github.com:junegunn/vim-easy-align
+	url = https://github.com:junegunn/vim-easy-align
 [submodule "plugged/vim-surround"]
 	path = plugged/vim-surround
-	url = git@github.com:tpope/vim-surround.git
+	url = https://github.com:tpope/vim-surround.git
 [submodule "plugged/vim-unimpaired"]
 	path = plugged/vim-unimpaired
-	url = git@github.com:tpope/vim-unimpaired.git
+	url = https://github.com:tpope/vim-unimpaired.git
 [submodule "plugged/vim-repeat"]
 	path = plugged/vim-repeat
-	url = git@github.com:tpope/vim-repeat.git
+	url = https://github.com:tpope/vim-repeat.git
 [submodule "plugged/vim-sleuth"]
 	path = plugged/vim-sleuth
-	url = git@github.com:tpope/vim-sleuth
+	url = https://github.com:tpope/vim-sleuth
 [submodule "plugged/fzf.vim"]
 	path = plugged/fzf.vim
-	url = git@github.com:junegunn/fzf.vim.git
+	url = https://github.com:junegunn/fzf.vim.git
 [submodule "plugged/fzf"]
 	path = plugged/fzf
-	url = git@github.com:junegunn/fzf.git
+	url = https://github.com:junegunn/fzf.git
 [submodule "plugged/vim-rtags"]
 	path = plugged/vim-rtags
 	url = https://github.com/lyuts/vim-rtags.git
