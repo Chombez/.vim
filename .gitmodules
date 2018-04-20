@@ -1,63 +1,83 @@
 [submodule "plugged/delimitMate"]
 	path = plugged/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+	branch = master
 [submodule "plugged/vim-sensible"]
 	path = plugged/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
+	branch = master
 [submodule "plugged/YouCompleteMe"]
 	path = plugged/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "plugged/vim-sneak"]
 	path = plugged/vim-sneak
 	url = https://github.com/justinmk/vim-sneak.git
+	branch = master
 [submodule "plugged/vim-fish"]
 	path = plugged/vim-fish
 	url = https://github.com/dag/vim-fish.git
+	branch = master
 [submodule "plugged/vim-gitgutter"]
 	path = plugged/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+	branch = master
 [submodule "plugged/vim-fugitive"]
 	path = plugged/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+	branch = master
 [submodule "plugged/vim-git"]
 	path = plugged/vim-git
 	url = https://github.com/tpope/vim-git.git
+	branch = master
 [submodule "plugged/gv.vim"]
 	path = plugged/gv.vim
 	url = https://github.com/junegunn/gv.vim.git
+	branch = master
 [submodule "plugged/vim-airline"]
 	path = plugged/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
+	branch = master
 [submodule "plugged/tagbar"]
 	path = plugged/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+	branch = master
 [submodule "plugged/vim-commentary"]
 	path = plugged/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+	branch = master
 [submodule "plugged/vim-easy-align"]
 	path = plugged/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+	branch = master
 [submodule "plugged/vim-surround"]
 	path = plugged/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+	branch = master
 [submodule "plugged/vim-unimpaired"]
 	path = plugged/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+	branch = master
 [submodule "plugged/vim-repeat"]
 	path = plugged/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+	branch = master
 [submodule "plugged/vim-sleuth"]
 	path = plugged/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
+	branch = master
 [submodule "plugged/fzf.vim"]
 	path = plugged/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+	branch = master
 [submodule "plugged/fzf"]
 	path = plugged/fzf
 	url = https://github.com/junegunn/fzf.git
+	branch = master
 [submodule "plugged/vim-rtags"]
 	path = plugged/vim-rtags
 	url = https://github.com/lyuts/vim-rtags.git
+	branch = master
 [submodule "plugged/ack.vim"]
 	path = plugged/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+	branch = master
