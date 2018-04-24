@@ -64,8 +64,8 @@ nnoremap <Leader>tggh :GitGutterLineHighlightsToggle<cr>
 nnoremap <Leader>fi   :YcmCompleter FixIt<cr>
 nnoremap <Leader>gt   :YcmCompleter GoTo<cr>
 nnoremap <Leader>ff   :FZF<cr>
-noremap  <leader>cr   :pyf          /home/ryadic/src/llvm-git/llvm-install/share/clang/clang-rename.py<cr>
-noremap  <leader>cf   :pyf          /home/ryadic/src/llvm-git/llvm-install/share/clang/clang-format.py<cr>
+noremap  <leader>cr   :pyf          $HOME/.local/share/clang/clang-rename.py<cr>
+noremap  <leader>cf   :pyf          $HOME/.local/share/clang/clang-format.py<cr>
 noremap  <leader>a    :Ack!<space>""<Left>
 
 xmap ga <Plug>(EasyAlign)
