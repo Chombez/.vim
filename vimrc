@@ -27,9 +27,10 @@ call plug#begin()
 
 	Plug 'Valloric/YouCompleteMe'
 		let g:ycm_add_preview_to_completeopt                = 1
-		let g:ycm_autoclose_preview_window_after_completion = 1
 		let g:ycm_autoclose_preview_window_after_insertion  = 1
+		let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 		let g:ycm_confirm_extra_conf                        = 0
+		let g:ycm_key_list_stop_completion = ['<CR>']
 		let g:ycm_filetype_whitelist = { 'python': 1, 'cpp':1 }
 		let g:ycm_error_symbol = 'x'
 		let g:ycm_warning_symbol = '!'
@@ -63,9 +64,10 @@ nnoremap <Leader>tb   :TagbarToggle<cr>
 nnoremap <Leader>tggh :GitGutterLineHighlightsToggle<cr>
 nnoremap <Leader>fi   :YcmCompleter FixIt<cr>
 nnoremap <Leader>gt   :YcmCompleter GoTo<cr>
+nnoremap <Leader>yd   :YcmDiags<cr>
 nnoremap <Leader>ff   :FZF<cr>
-noremap  <leader>cr   :pyf          $HOME/.local/share/clang/clang-rename.py<cr>
 noremap  <leader>cf   :pyf          $HOME/.local/share/clang/clang-format.py<cr>
+noremap  <leader>cif  :pyf          $HOME/.local/share/clang/clang-include-fixer.py<cr>
 noremap  <leader>a    :Ack!<space>""<Left>
 
 xmap ga <Plug>(EasyAlign)
@@ -91,8 +93,6 @@ set cmdheight=2
 "Key Mappings
 map      <space> /
 inoremap ;l      <esc>
-nnoremap n       nzz
-nnoremap N       Nzz
 
 "Searching
 set ignorecase
