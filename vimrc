@@ -57,6 +57,12 @@ call plug#begin()
 
 	Plug 'junegunn/gv.vim', { 'on': 'GV' }
 
+	" LLDB
+	Plug 'gilligan/vim-lldb'
+	Plug 'Shougo/vimproc', {'do' : 'make'}
+	Plug 'idanarye/vim-vebugger'
+		let g:vebugger_leader = '<Leader>d'
+
 call plug#end()
 
 "Plugin mappings

@@ -81,3 +81,12 @@
 	path = plugged/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
 	branch = master
+[submodule "plugged/vim-lldb"]
+	path = plugged/vim-lldb
+	url = https://github.com/gilligan/vim-lldb.git
+[submodule "plugged/vim-vebugger"]
+	path = plugged/vim-vebugger
+	url = https://github.com/idanarye/vim-vebugger.git
+[submodule "plugged/vimproc"]
+	path = plugged/vimproc
+	url = https://github.com/Shougo/vimproc.vim.git
