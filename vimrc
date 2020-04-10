@@ -29,6 +29,7 @@ call plug#begin()
 
 	Plug 'vim-airline/vim-airline'
 		let g:airline#extensions#tagbar#enabled = 0
+		let g:airline#extensions#vista#enabled = 0
 
 	Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 		let g:tagbar_sort = 0
