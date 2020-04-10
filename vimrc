@@ -33,6 +33,9 @@ call plug#begin()
 	Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 		let g:tagbar_sort = 0
 
+	Plug 'liuchengxu/vista.vim', {'on': 'Vista'}
+		let g:vista_default_executive = "ctags"
+
 	" Git
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-git'
@@ -64,6 +67,7 @@ call plug#end()
 
 "Plugin mappings
 nnoremap <Leader>tb   :TagbarToggle<cr>
+nnoremap <Leader>vb   :Vista!!<cr>
 nnoremap <Leader>tggh :GitGutterLineHighlightsToggle<cr>
 nnoremap <Leader>ff   :FZF<cr>
 noremap  <leader>cif  :pyf          $HOME/.local/share/clang/clang-include-fixer.py<cr>
