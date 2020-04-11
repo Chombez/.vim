@@ -16,14 +16,11 @@ call plug#begin()
 
 	Plug 'junegunn/vim-easy-align', {'on': ['<Plug>(EasyAlign)', 'EasyAlign']}
 
-	Plug 'justinmk/vim-sneak'
-		let g:sneak#streak = 1
-
 	Plug 'junegunn/fzf', {'on': 'FZF'}
-		let $FZF_DEFAULT_COMMAND = 'ag -fUp ~/.vim/.ag_ignore -g ""'
+		let $FZF_DEFAULT_COMMAND = 'ag -fUp ~/.vim/.search_ignore -g ""'
 
 	Plug 'mileszs/ack.vim', {'on': 'Ack'}
-		let g:ackprg = 'ag --vimgrep --silent -fUp ~/.vim/.ag_ignore'
+		let g:ackprg = 'ag --vimgrep --silent -fUp ~/.vim/.search_ignore'
 
 	Plug 'dag/vim-fish', {'for': 'fish'}
 
@@ -36,6 +33,11 @@ call plug#begin()
 
 	Plug 'liuchengxu/vista.vim', {'on': 'Vista'}
 		let g:vista_default_executive = "ctags"
+		let g:vista_executive_for = {
+			    \ 'cpp': 'vim_lsp',
+			    \ 'python': 'vim_lsp',
+			    \ }
+
 
 	" Git
 	Plug 'tpope/vim-fugitive'
@@ -206,6 +208,7 @@ autocmd Filetype fish compiler fish
 autocmd FileType qf map <buffer> q :quit<cr>
 autocmd FileType qf nnoremap <buffer> <C-t> <C-W><Enter><C-W>T
 autocmd FileType tagbar setlocal nocursorline nocursorcolumn
-au FileType python setlocal formatprg=autopep8\ -
+au FileType python setlocal equalprg=autopep8\ -
+au FileType xml setlocal equalprg=xmllint\ --format\ -
 autocmd FileType text.lsp-hover map <buffer> q :quit<cr>
 
