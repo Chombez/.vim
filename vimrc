@@ -18,26 +18,21 @@ call plug#begin()
 
 	Plug 'junegunn/fzf', {'on': 'FZF'}
 		let $FZF_DEFAULT_COMMAND = 'ag -fUp ~/.vim/.search_ignore -g ""'
+		let g:fzf_layout = { 'window': { 'width': 0.99, 'height': 0.4, 'relative': v:true, 'yoffset': 1.0  } }
 
 	Plug 'mileszs/ack.vim', {'on': 'Ack'}
 		let g:ackprg = 'ag --vimgrep --silent -fUp ~/.vim/.search_ignore'
 
 	Plug 'dag/vim-fish', {'for': 'fish'}
 
+	Plug 'editorconfig/editorconfig-vim'
+		let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
 	Plug 'vim-airline/vim-airline'
 		let g:airline#extensions#tagbar#enabled = 0
-		let g:airline#extensions#vista#enabled = 0
 
 	Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 		let g:tagbar_sort = 0
-
-	Plug 'liuchengxu/vista.vim', {'on': 'Vista'}
-		let g:vista_default_executive = "ctags"
-		let g:vista_executive_for = {
-			    \ 'cpp': 'vim_lsp',
-			    \ 'python': 'vim_lsp',
-			    \ }
-
 
 	" Git
 	Plug 'tpope/vim-fugitive'
@@ -50,7 +45,7 @@ call plug#begin()
 
 	Plug 'junegunn/gv.vim', { 'on': 'GV' }
 
-	" Clangd LSP
+	" LSP
 	Plug 'prabirshrestha/async.vim'
 	Plug 'prabirshrestha/vim-lsp'
 		let g:lsp_log_file = expand('~/vim-lsp.log')
@@ -169,7 +164,7 @@ if executable('clangd')
         autocmd User lsp_setup call lsp#register_server({
                     \ 'name': 'clangd',
                     \ 'cmd': {server_info->['clangd',
-                        \'-compile-commands-dir=build/debug/cmake/',
+                        \'-compile-commands-dir=build/',
                         \'-clang-tidy',
                         \'-all-scopes-completion',
                         \'-function-arg-placeholders',
@@ -177,10 +172,10 @@ if executable('clangd')
                         \'-suggest-missing-includes',
                         \'-background-index',
                         \'--pch-storage=memory',
-                        \'-j=8']},
+                        \'-j=2']},
                     \ 'root_uri':{server_info->lsp#utils#path_to_uri(
                         \ lsp#utils#find_nearest_parent_directory(lsp#utils#get_buffer_path(),
-                        \ 'build/debug/cmake'))},
+                        \ 'build/'))},
                     \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
                     \ })
         autocmd FileType c setlocal omnifunc=lsp#complete
